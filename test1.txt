@@ -1,0 +1,201 @@
+Using TensorFlow backend.
+(48508, 64, 64, 3) (48508, 64, 64, 3)
+(5390, 64, 64, 3) (5390, 64, 64, 3)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 64, 64, 3)         0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 64, 64, 128)       18944     
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 64, 64, 128)       512       
+_________________________________________________________________
+activation_1 (Activation)    (None, 64, 64, 128)       0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 64, 64, 320)       41280     
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 64, 64, 320)       1280      
+_________________________________________________________________
+activation_2 (Activation)    (None, 64, 64, 320)       0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 64, 64, 320)       102720    
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 64, 64, 320)       102720    
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 64, 64, 320)       1280      
+_________________________________________________________________
+activation_4 (Activation)    (None, 64, 64, 320)       0         
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 64, 64, 128)       41088     
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 64, 64, 128)       512       
+_________________________________________________________________
+activation_5 (Activation)    (None, 64, 64, 128)       0         
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 64, 64, 128)       147584    
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 64, 64, 128)       512       
+_________________________________________________________________
+activation_6 (Activation)    (None, 64, 64, 128)       0         
+_________________________________________________________________
+conv2d_7 (Conv2D)            (None, 64, 64, 512)       66048     
+_________________________________________________________________
+batch_normalization_7 (Batch (None, 64, 64, 512)       2048      
+_________________________________________________________________
+activation_7 (Activation)    (None, 64, 64, 512)       0         
+_________________________________________________________________
+conv2d_8 (Conv2D)            (None, 64, 64, 128)       1638528   
+_________________________________________________________________
+batch_normalization_8 (Batch (None, 64, 64, 128)       512       
+_________________________________________________________________
+activation_8 (Activation)    (None, 64, 64, 128)       0         
+_________________________________________________________________
+conv2d_9 (Conv2D)            (None, 64, 64, 128)       409728    
+_________________________________________________________________
+batch_normalization_9 (Batch (None, 64, 64, 128)       512       
+_________________________________________________________________
+activation_9 (Activation)    (None, 64, 64, 128)       0         
+_________________________________________________________________
+conv2d_10 (Conv2D)           (None, 64, 64, 128)       147584    
+_________________________________________________________________
+batch_normalization_10 (Batc (None, 64, 64, 128)       512       
+_________________________________________________________________
+activation_10 (Activation)   (None, 64, 64, 128)       0         
+_________________________________________________________________
+conv2d_11 (Conv2D)           (None, 64, 64, 128)       409728    
+_________________________________________________________________
+batch_normalization_11 (Batc (None, 64, 64, 128)       512       
+_________________________________________________________________
+activation_11 (Activation)   (None, 64, 64, 128)       0         
+_________________________________________________________________
+conv2d_12 (Conv2D)           (None, 64, 64, 128)       409728    
+_________________________________________________________________
+batch_normalization_12 (Batc (None, 64, 64, 128)       512       
+_________________________________________________________________
+activation_12 (Activation)   (None, 64, 64, 128)       0         
+_________________________________________________________________
+conv2d_13 (Conv2D)           (None, 64, 64, 256)       33024     
+_________________________________________________________________
+batch_normalization_13 (Batc (None, 64, 64, 256)       1024      
+_________________________________________________________________
+activation_13 (Activation)   (None, 64, 64, 256)       0         
+_________________________________________________________________
+conv2d_14 (Conv2D)           (None, 64, 64, 64)        802880    
+_________________________________________________________________
+batch_normalization_14 (Batc (None, 64, 64, 64)        256       
+_________________________________________________________________
+activation_14 (Activation)   (None, 64, 64, 64)        0         
+_________________________________________________________________
+conv2d_15 (Conv2D)           (None, 64, 64, 3)         9411      
+=================================================================
+Total params: 4,390,979
+Trainable params: 4,385,987
+Non-trainable params: 4,992
+_________________________________________________________________
+Train on 48508 samples, validate on 5390 samples
+Epoch 1/50
+48508/48508 [==============================] - 890s 18ms/step - loss: 0.1122 - acc: 0.7413 - mean_squared_error: 0.1122 - val_loss: 0.1054 - val_acc: 0.7565 - val_mean_squared_error: 0.1054
+Epoch 2/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.1016 - acc: 0.7675 - mean_squared_error: 0.1016 - val_loss: 0.1038 - val_acc: 0.7577 - val_mean_squared_error: 0.1038
+Epoch 3/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.1015 - acc: 0.7676 - mean_squared_error: 0.1015 - val_loss: 0.1066 - val_acc: 0.7541 - val_mean_squared_error: 0.1066
+Epoch 4/50
+48508/48508 [==============================] - 882s 18ms/step - loss: 0.1007 - acc: 0.7706 - mean_squared_error: 0.1007 - val_loss: 0.1019 - val_acc: 0.7645 - val_mean_squared_error: 0.1019
+Epoch 5/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0993 - acc: 0.7747 - mean_squared_error: 0.0993 - val_loss: 0.1013 - val_acc: 0.7701 - val_mean_squared_error: 0.1013
+Epoch 6/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0994 - acc: 0.7746 - mean_squared_error: 0.0994 - val_loss: 0.1011 - val_acc: 0.7701 - val_mean_squared_error: 0.1011
+Epoch 7/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0990 - acc: 0.7765 - mean_squared_error: 0.0990 - val_loss: 0.1022 - val_acc: 0.7683 - val_mean_squared_error: 0.1022
+Epoch 8/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0989 - acc: 0.7773 - mean_squared_error: 0.0989 - val_loss: 0.1012 - val_acc: 0.7724 - val_mean_squared_error: 0.1012
+Epoch 9/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0986 - acc: 0.7790 - mean_squared_error: 0.0986 - val_loss: 0.1011 - val_acc: 0.7718 - val_mean_squared_error: 0.1011
+Epoch 10/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0985 - acc: 0.7799 - mean_squared_error: 0.0985 - val_loss: 0.1008 - val_acc: 0.7731 - val_mean_squared_error: 0.1008
+Epoch 11/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0984 - acc: 0.7802 - mean_squared_error: 0.0984 - val_loss: 0.1007 - val_acc: 0.7727 - val_mean_squared_error: 0.1007
+Epoch 12/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0984 - acc: 0.7808 - mean_squared_error: 0.0984 - val_loss: 0.1008 - val_acc: 0.7732 - val_mean_squared_error: 0.1008
+Epoch 13/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0984 - acc: 0.7808 - mean_squared_error: 0.0984 - val_loss: 0.1009 - val_acc: 0.7737 - val_mean_squared_error: 0.1009
+Epoch 14/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0983 - acc: 0.7812 - mean_squared_error: 0.0983 - val_loss: 0.1007 - val_acc: 0.7736 - val_mean_squared_error: 0.1007
+Epoch 15/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0983 - acc: 0.7815 - mean_squared_error: 0.0983 - val_loss: 0.1006 - val_acc: 0.7734 - val_mean_squared_error: 0.1006
+Epoch 16/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0983 - acc: 0.7816 - mean_squared_error: 0.0983 - val_loss: 0.1007 - val_acc: 0.7729 - val_mean_squared_error: 0.1007
+Epoch 17/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0983 - acc: 0.7817 - mean_squared_error: 0.0983 - val_loss: 0.1006 - val_acc: 0.7752 - val_mean_squared_error: 0.1006
+Epoch 18/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0983 - acc: 0.7818 - mean_squared_error: 0.0983 - val_loss: 0.1006 - val_acc: 0.7744 - val_mean_squared_error: 0.1006
+Epoch 19/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0982 - acc: 0.7820 - mean_squared_error: 0.0982 - val_loss: 0.1007 - val_acc: 0.7742 - val_mean_squared_error: 0.1007
+Epoch 20/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0983 - acc: 0.7817 - mean_squared_error: 0.0983 - val_loss: 0.1006 - val_acc: 0.7741 - val_mean_squared_error: 0.1006
+Epoch 21/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0982 - acc: 0.7822 - mean_squared_error: 0.0982 - val_loss: 0.1009 - val_acc: 0.7736 - val_mean_squared_error: 0.1009
+Epoch 22/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0982 - acc: 0.7822 - mean_squared_error: 0.0982 - val_loss: 0.1006 - val_acc: 0.7752 - val_mean_squared_error: 0.1006
+Epoch 23/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0982 - acc: 0.7824 - mean_squared_error: 0.0982 - val_loss: 0.1006 - val_acc: 0.7733 - val_mean_squared_error: 0.1006
+Epoch 24/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0982 - acc: 0.7823 - mean_squared_error: 0.0982 - val_loss: 0.1007 - val_acc: 0.7733 - val_mean_squared_error: 0.1007
+Epoch 25/50
+48508/48508 [==============================] - 880s 18ms/step - loss: 0.0982 - acc: 0.7825 - mean_squared_error: 0.0982 - val_loss: 0.1007 - val_acc: 0.7684 - val_mean_squared_error: 0.1007
+Epoch 26/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0982 - acc: 0.7825 - mean_squared_error: 0.0982 - val_loss: 0.1006 - val_acc: 0.7733 - val_mean_squared_error: 0.1006
+Epoch 27/50
+48508/48508 [==============================] - 880s 18ms/step - loss: 0.0982 - acc: 0.7825 - mean_squared_error: 0.0982 - val_loss: 0.1007 - val_acc: 0.7747 - val_mean_squared_error: 0.1007
+
+Epoch 00027: ReduceLROnPlateau reducing learning rate to 0.00020000000949949026.
+Epoch 28/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7832 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7756 - val_mean_squared_error: 0.1005
+Epoch 29/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7833 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7757 - val_mean_squared_error: 0.1005
+Epoch 30/50
+48508/48508 [==============================] - 880s 18ms/step - loss: 0.0981 - acc: 0.7833 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7758 - val_mean_squared_error: 0.1005
+Epoch 31/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7833 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7754 - val_mean_squared_error: 0.1005
+Epoch 32/50
+48508/48508 [==============================] - 880s 18ms/step - loss: 0.0981 - acc: 0.7833 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 33/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7834 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7757 - val_mean_squared_error: 0.1005
+Epoch 34/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7833 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 35/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7834 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7758 - val_mean_squared_error: 0.1005
+Epoch 36/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7834 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7758 - val_mean_squared_error: 0.1005
+Epoch 37/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7834 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+
+Epoch 00037: ReduceLROnPlateau reducing learning rate to 4.0000001899898055e-05.
+Epoch 38/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 39/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 40/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 41/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 42/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7760 - val_mean_squared_error: 0.1005
+Epoch 43/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 44/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7760 - val_mean_squared_error: 0.1005
+Epoch 45/50
+48508/48508 [==============================] - 880s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7760 - val_mean_squared_error: 0.1005
+Epoch 46/50
+48508/48508 [==============================] - 880s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 47/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7835 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7760 - val_mean_squared_error: 0.1005
+
+Epoch 00047: ReduceLROnPlateau reducing learning rate to 1e-05.
+Epoch 48/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7836 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7759 - val_mean_squared_error: 0.1005
+Epoch 49/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7836 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7760 - val_mean_squared_error: 0.1005
+Epoch 50/50
+48508/48508 [==============================] - 881s 18ms/step - loss: 0.0981 - acc: 0.7836 - mean_squared_error: 0.0981 - val_loss: 0.1005 - val_acc: 0.7760 - val_mean_squared_error: 0.1005
